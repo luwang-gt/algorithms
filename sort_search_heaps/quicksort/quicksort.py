@@ -2,7 +2,7 @@ tests = [
     [3, 6, 4, 0, 1, 5, 2],
     [],
     [1, 1, 1],
-    [0, 2, 2, 1, 3, 3, 3],
+    [0, 2, 3, 2, 1, 3, 0, 3],
     [0, -2, -1, 3, 4],
 ]
 
@@ -18,6 +18,8 @@ def quicksort(nums, lo, hi):
 
 
 def partition(nums, lo, hi):
+    # Lomuto partition
+
     pivot = nums[hi]
     i = lo
 
